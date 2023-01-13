@@ -33,7 +33,11 @@
 	<!-- Button trigger modal -->
 	<script>
 	$(document).ready(function(){
-        $("#ModalLong").modal('show');
+		if(!localStorage.getItem('reg')){
+			$("#ModalLong").modal('show');
+		}
+		localStorage.setItem('reg',true) //Store in cache
+
 		$('#ModalLong').on('shown.bs.modal', function () {
 			$('#myInput').trigger('focus')
 		})
