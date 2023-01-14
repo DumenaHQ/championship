@@ -41,7 +41,7 @@
                             "name": "Summary and Lesson Review"
                         }
                     ],
-                    "description": ""
+                    "description": "This first module discusses fundamentals of thinking about problems and talks about circuits in general."
                 },
                 {
                     "name": "Introduction To Programming With C",
@@ -80,7 +80,7 @@
                         }
 
                     ],
-                    "description": ""
+                    "description": "Programming involves the use of a special language to communicate to computers exactly what they need to do. In this module we would get an early introduction into the C programming language that we can use to program on arduino"
                 },
                 {
                     "name": "Basic Components & Circuit Notation",
@@ -110,21 +110,67 @@
                             "name":"Component (Capacitor)"
                         }
                     ],
-                    "description": ""
+                    "description": "There are many basic components that you find in almost all electronic devices we take a look at some of them in this module"
                 },
                 {
                     "name": "Intro to Modeling and Design (TinkerCAD)",
                     "lessons": [
-
+                        {
+                            "link":"https://firebasestorage.googleapis.com/v0/b/dumena-18b4e.appspot.com/o/Introduction%20to%20Circuits%20%20(Robotics%20Competition)%2FIntro%20to%20TinkerCAD%2FIntro%201.mp4?alt=media&token=68624382-d66d-4ee0-a1f5-ba84a8818b99",
+                            "name":"Introduction Part 1"
+                        },
+                        {
+                            "link":"https://firebasestorage.googleapis.com/v0/b/dumena-18b4e.appspot.com/o/Introduction%20to%20Circuits%20%20(Robotics%20Competition)%2FIntro%20to%20TinkerCAD%2FIntro%202.mp4?alt=media&token=3d0a2522-be5f-4452-bc92-683d64f5359d",
+                            "name":"Introduction Part 2"
+                        },
+                        {
+                            "link":"https://firebasestorage.googleapis.com/v0/b/dumena-18b4e.appspot.com/o/Introduction%20to%20Circuits%20%20(Robotics%20Competition)%2FIntro%20to%20TinkerCAD%2FIntro%203.mp4?alt=media&token=0a918cc3-b567-49e5-b887-5f740510f4da",
+                            "name":"Introduction Part 3"
+                        },
+                        {
+                            "link":"https://firebasestorage.googleapis.com/v0/b/dumena-18b4e.appspot.com/o/Introduction%20to%20Circuits%20%20(Robotics%20Competition)%2FIntro%20to%20TinkerCAD%2FIntro%204.mp4?alt=media&token=93dbfe37-9b1b-423a-be94-534c503a35ec",
+                            "name":"Introduction Part 4"
+                        },
+                        {
+                            "link":"https://firebasestorage.googleapis.com/v0/b/dumena-18b4e.appspot.com/o/Introduction%20to%20Circuits%20%20(Robotics%20Competition)%2FIntro%20to%20TinkerCAD%2F1%20Circuit%20Design-1.mp4?alt=media&token=571b4c09-ea2d-4a97-9c2e-63050d64394e",
+                            "name":"Circuit Design 1 Part 1"
+                        },
+                        {
+                            "link":"https://firebasestorage.googleapis.com/v0/b/dumena-18b4e.appspot.com/o/Introduction%20to%20Circuits%20%20(Robotics%20Competition)%2FIntro%20to%20TinkerCAD%2F1%20Circuit%20Design-2.mp4?alt=media&token=1039527f-1094-4001-ad03-ed98c8c48b01",
+                            "name":"Circuit Design 1 Part 2"
+                        },
+                        {
+                            "link":"https://firebasestorage.googleapis.com/v0/b/dumena-18b4e.appspot.com/o/Introduction%20to%20Circuits%20%20(Robotics%20Competition)%2FIntro%20to%20TinkerCAD%2F1%20Circuit%20Design-3.mp4?alt=media&token=e591a732-62d9-42af-ac7d-c1bd44bc1313",
+                            "name":"Circuit Design 1 Part 3"
+                        },
+                        {
+                            "link":"https://firebasestorage.googleapis.com/v0/b/dumena-18b4e.appspot.com/o/Introduction%20to%20Circuits%20%20(Robotics%20Competition)%2FIntro%20to%20TinkerCAD%2F2%20Circuit%20Design-1.m4v?alt=media&token=03d689f4-55a7-43ec-83c5-14f742186794",
+                            "name":"Circuit Design 2"
+                        },
+                        {
+                            "link":"https://firebasestorage.googleapis.com/v0/b/dumena-18b4e.appspot.com/o/Introduction%20to%20Circuits%20%20(Robotics%20Competition)%2FIntro%20to%20TinkerCAD%2F3%20Circuit%20(Ardruino)-1.mp4?alt=media&token=0a5a655c-6e5a-4b0a-83fb-193fafed1a02",
+                            "name":"Circuit Design 3 Part 1"
+                        },
+                        {
+                            "link":"https://firebasestorage.googleapis.com/v0/b/dumena-18b4e.appspot.com/o/Introduction%20to%20Circuits%20%20(Robotics%20Competition)%2FIntro%20to%20TinkerCAD%2F3%20Circuit%20(Ardruino)-2.mp4?alt=media&token=63be2393-b092-45fa-a68c-ee281f09edbf",
+                            "name":"Circuit Design 3 Part 1"
+                        }
                     ],
-                    "description": ""
+                    "description": "This module takes a look at the online simulation software known as tinkercad."
                 },
                 {
                     "name": "Prototyping and Testing",
                     "lessons": [
-                    
+                        {
+                            "link":"https://firebasestorage.googleapis.com/v0/b/dumena-18b4e.appspot.com/o/Introduction%20to%20Circuits%20%20(Robotics%20Competition)%2FPrototyping%20and%20Testing%2FCircuit%20Design%202%20(Intro%20to%20Arduino).mp4?alt=media&token=a1f1d793-d52b-4aef-ac57-31083e5f8f53",
+                            "name":"Circuit Design 1"
+                        },
+                        {
+                            "link":"https://firebasestorage.googleapis.com/v0/b/dumena-18b4e.appspot.com/o/Introduction%20to%20Circuits%20%20(Robotics%20Competition)%2FIntro%20to%20TinkerCAD%2F3%20Circuit%20(Ardruino)-2.mp4?alt=media&token=63be2393-b092-45fa-a68c-ee281f09edbf",
+                            "name":"Circuit Design 3"
+                        }
                     ],
-                    "description": ""
+                    "description": "In this module we try to recreate some of the simple circuits we simulated on tinkercad."
                 }
             ],
             "module_quiz":[
