@@ -11,6 +11,15 @@ $(document).ready(function () {
     <header class="major">
       <h2 style = "font-size:2em">${name}</h2>
     </header>
+    <div class="table-wrapper">
+    <h2 style = "font-size:2em">Modules</h2>
+
+														<table class="alt">
+															<tbody id="course-content-modules${name.replaceAll(/\s/g, '')}">
+
+															</tbody>
+														</table>
+													</div>
     <div class="posts" id="modules-list">
     
     </div>
@@ -44,7 +53,22 @@ $(document).ready(function () {
   </article>`.trim();
   }
 
+function moduelTableOfContent(name){
+  return `
+  <tr>
+  <td>
+  <a style = "border-bottom: solid 1px" href="index.html#module-${name.replaceAll(/\s/g, '')}"> 
+  ${name}
+  </a>
+  </td>
+  <td>
+  <a style = "border-bottom: solid 0px"  href="index.html#module-${name.replaceAll(/\s/g, '')}"> 
+  <i class="fa-solid fa-link"></i>
+  </a>
+  </td> 
+  </tr>`;
 
+}
 
 
   function moduleSectionUI(name, description) {
@@ -84,7 +108,11 @@ $(document).ready(function () {
     document.getElementById('page-main-body').insertAdjacentHTML('beforeend', courseBodyUI(data.courses[i].name))
     let courseListUI = document.getElementById('courses-list')
     courseListUI.insertAdjacentHTML('beforeend', courseTileUI(data.courses[i].name, data.courses[i].description))
-
+    let moduleOutlineListUI = document.getElementById(`course-content-modules${data.courses[i].name.replaceAll(/\s/g, '')}`)
+    
+    for (let m = 0; m < data.courses[i].modules.length; m++) { 
+    moduleOutlineListUI.insertAdjacentHTML('beforeend',moduelTableOfContent(data.courses[i].modules[m].name))
+    }
     //Set Modules Per Course
 
     for (let j = 0; j < data.courses[i].modules.length; j++) {
