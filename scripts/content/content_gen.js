@@ -1,5 +1,11 @@
 
-import { default as data } from './content.json' assert { type: "json" };
+// import { default as data } from './content.json' assert { type: "json" };
+import { readFile } from 'fs/promises';
+const data = JSON.parse(
+  await readFile(
+    new URL('./content.json', import.meta.url)
+  )
+);
 
 $(document).ready(function () {
 
