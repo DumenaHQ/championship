@@ -1,4 +1,4 @@
-{
+export let data= {
     "courses": [
         {
             "name": "Introduction to Circuits (Robotics Competition)",

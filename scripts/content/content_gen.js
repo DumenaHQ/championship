@@ -1,5 +1,6 @@
 
-import { default as data } from './content.json' assert { type: "json" };
+import {data} from './content.js';
+
 
 $(document).ready(function () {
 
