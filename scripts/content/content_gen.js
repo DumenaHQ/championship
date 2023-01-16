@@ -45,7 +45,7 @@ $(document).ready(function () {
   function courseTileUI(name, description) {
     return `<article>
     <!-- <span class="image fit" style="width:200px;"><img src="images/pic02.jpg" alt=""></span> -->
-    <a style="border-bottom:0px solid; color:black;" href="index.html#course-content-${name.replaceAll(/\s/g, '')}">
+    <a style="border-bottom:0px solid; color:black;"  href="course/course.html?course=${name.replaceAll(/\s/g, '')}">
       <div class="content" style="padding: 0px 0px 0px 30px;">
         <h3>${name}</h3>
         <p>${description}</p>
@@ -54,48 +54,22 @@ $(document).ready(function () {
   </article>`.trim();
   }
 
-function moduelTableOfContent(name){
+function moduelTableOfContent(courseName,moduleName){
   return `
   <tr>
   <td>
-  <a style = "border-bottom: solid 1px" href="index.html#module-${name.replaceAll(/\s/g, '')}"> 
-  ${name}
+  <a style = "border-bottom: solid 1px" href="course/module.html?course=${courseName.replaceAll(/\s/g, '')}&module=${moduleName.replaceAll(/\s/g, '')}"> 
+  ${moduleName}
   </a>
   </td>
   <td>
-  <a style = "border-bottom: solid 0px"  href="index.html#module-${name.replaceAll(/\s/g, '')}"> 
+  <a style = "border-bottom: solid 0px"  href="course/module.html?course=${courseName.replaceAll(/\s/g, '')}&module=${moduleName.replaceAll(/\s/g, '')}"> 
   <i class="fa-solid fa-link"></i>
   </a>
   </td> 
   </tr>`;
 
 }
-
-
-  function moduleSectionUI(name, description) {
-    return `
-    <div id="module-${name.replaceAll(/\s/g, '')}" style="max-width: 80%;
-  margin: auto;">
-    <header style = "padding-top: 70px;">
-      <h2>${name}</h2>
-      <p>${description}</p>
-    </header>
-    <div class="posts" id="module-lesson${name.replaceAll(/\s/g, '')}" >
-
-    </div>
-  </div>`;
-  }
-
-  function lessonSectionUI(name, url) {
-    return `
-    <article>
-    <b>${name}</b>
-    <video height="240" controls="">
-    <source src="${url}" type="video/mp4">
-    Your browser does not support the video tag.
-  </video></article>
-  `;
-  }
 
 
 
@@ -112,19 +86,19 @@ function moduelTableOfContent(name){
     let moduleOutlineListUI = document.getElementById(`course-content-modules${data.courses[i].name.replaceAll(/\s/g, '')}`)
     
     for (let m = 0; m < data.courses[i].modules.length; m++) { 
-    moduleOutlineListUI.insertAdjacentHTML('beforeend',moduelTableOfContent(data.courses[i].modules[m].name))
+    moduleOutlineListUI.insertAdjacentHTML('beforeend',moduelTableOfContent(data.courses[i].name,data.courses[i].modules[m].name))
     }
     //Set Modules Per Course
 
-    for (let j = 0; j < data.courses[i].modules.length; j++) {
+    // for (let j = 0; j < data.courses[i].modules.length; j++) {
 
-      let moduleListUI = document.getElementById('modules-list')
-      moduleListUI.insertAdjacentHTML('beforeend', moduleSectionUI(data.courses[i].modules[j].name, data.courses[i].modules[j].description))
-      //Set Lessons Per Module
-      for (let k = 0; k < data.courses[i].modules[j].lessons.length; k++) {
-        document.getElementById(`module-lesson${data.courses[i].modules[j].name.replaceAll(/\s/g,'')}`).insertAdjacentHTML('beforeend',lessonSectionUI(data.courses[i].modules[j].lessons[k].name,data.courses[i].modules[j].lessons[k].link))
-      }
-    }
+    //   let moduleListUI = document.getElementById('modules-list')
+    //   moduleListUI.insertAdjacentHTML('beforeend', moduleSectionUI(data.courses[i].modules[j].name, data.courses[i].modules[j].description))
+    //   //Set Lessons Per Module
+    //   for (let k = 0; k < data.courses[i].modules[j].lessons.length; k++) {
+    //     document.getElementById(`module-lesson${data.courses[i].modules[j].name.replaceAll(/\s/g,'')}`).insertAdjacentHTML('beforeend',lessonSectionUI(data.courses[i].modules[j].lessons[k].name,data.courses[i].modules[j].lessons[k].link))
+    //   }
+    // }
 
   }
 
