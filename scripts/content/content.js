@@ -166,12 +166,24 @@ export let data= {
                             "name":"Circuit Design 1"
                         },
                         {
-                            "link":"https://firebasestorage.googleapis.com/v0/b/dumena-18b4e.appspot.com/o/Introduction%20to%20Circuits%20%20(Robotics%20Competition)%2FIntro%20to%20TinkerCAD%2F3%20Circuit%20(Ardruino)-2.mp4?alt=media&token=63be2393-b092-45fa-a68c-ee281f09edbf",
+                            "link":"https://firebasestorage.googleapis.com/v0/b/dumena-18b4e.appspot.com/o/Introduction%20to%20Circuits%20%20(Robotics%20Competition)%2FPrototyping%20and%20Testing%2FCircuit%20Design%201.mp4?alt=media&token=132006a3-2c3a-4f67-b52c-5dab396671e7",
                             "name":"Circuit Design 3"
                         }
                     ],
                     "description": "In this module we try to recreate some of the simple circuits we simulated on tinkercad."
                 }
+            ],
+            "module_quiz":[
+                {"question":""},
+                {"question":""},
+                {"question":""}
+            ]
+        },
+        {
+            "name":"Robotics 101: Components and Coding",
+            "description": "",
+            "modules": [
+
             ],
             "module_quiz":[
                 {"question":""},
