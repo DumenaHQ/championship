@@ -41,7 +41,9 @@ export let data= {
                             "name": "Summary and Lesson Review"
                         }
                     ],
-                    "description": "This first module discusses fundamentals of thinking about problems and talks about circuits in general."
+                    "description": "This first module discusses fundamentals of thinking about problems and talks about circuits in general.",
+                    "module_quiz":{"link":"","name":"Intro to Circuit Design Obj Quiz"}
+
                 },
                 {
                     "name": "Introduction To Programming With C",
@@ -80,7 +82,8 @@ export let data= {
                         }
 
                     ],
-                    "description": "Programming involves the use of a special language to communicate to computers exactly what they need to do. In this module we would get an early introduction into the C programming language that we can use to program on arduino"
+                    "description": "Programming involves the use of a special language to communicate to computers exactly what they need to do. In this module we would get an early introduction into the C programming language that we can use to program on arduino",
+                    "module_quiz":{"link":"","name":""}
                 },
                 {
                     "name": "Basic Components & Circuit Notation",
@@ -110,7 +113,9 @@ export let data= {
                             "name":"Component (Capacitor)"
                         }
                     ],
-                    "description": "There are many basic components that you find in almost all electronic devices we take a look at some of them in this module"
+                    "description": "There are many basic components that you find in almost all electronic devices we take a look at some of them in this module",
+                    "module_quiz":{"link":"","name":""}
+
                 },
                 {
                     "name": "Intro to Modeling and Design (TinkerCAD)",
@@ -156,7 +161,9 @@ export let data= {
                             "name":"Circuit Design 3 Part 1"
                         }
                     ],
-                    "description": "This module takes a look at the online simulation software known as tinkercad."
+                    "description": "This module takes a look at the online simulation software known as tinkercad.",
+                    "module_quiz":{"link":"","name":""}
+
                 },
                 {
                     "name": "Prototyping and Testing",
@@ -170,26 +177,42 @@ export let data= {
                             "name":"Circuit Design 3"
                         }
                     ],
-                    "description": "In this module we try to recreate some of the simple circuits we simulated on tinkercad."
+                    "description": "In this module we try to recreate some of the simple circuits we simulated on tinkercad.",
+                    "module_quiz":{"link":"","name":""}
+
                 }
             ],
-            "module_quiz":[
-                {"question":""},
-                {"question":""},
-                {"question":""}
-            ]
         },
         {
             "name":"Robotics 101: Components and Coding",
-            "description": "",
+            "description": "<b>Coming Soon....</b>",
             "modules": [
-
+                {
+                    "name": "Foundational Backgrounds - Arduino and Breadboard",
+                    "lessons": [],
+                    "description": "Coming Soon...",
+                    "module_quiz":{"link":"","name":""}
+                },
+                {
+                    "name": "IDE Programming For Arduino",
+                    "lessons": [],
+                    "description": "Coming Soon...",
+                    "module_quiz":{"link":"","name":""}
+                },
+                {
+                    "name": "Advanced Components",
+                    "lessons": [],
+                    "description": "Coming Soon...",
+                    "module_quiz":{"link":"","name":""}
+                },
+                {
+                    "name": "Intro to Project Building",
+                    "lessons": [],
+                    "description": "Coming Soon...",
+                    "module_quiz":{"link":"","name":""}
+                },
             ],
-            "module_quiz":[
-                {"question":""},
-                {"question":""},
-                {"question":""}
-            ]
+
         }
     ]
 }

@@ -24,21 +24,6 @@ $(document).ready(function () {
     <div class="posts" id="modules-list">
     
     </div>
-                  <!--    <dl>
-                          <h2>Test your knowledge !</h2>
-                          <dt>Lorem Question ipsum dolor sit amet consectetur adipisicing elit.</dt>
-                          <dd>
-                              <p>Lorem ipsum dolor vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Lorem ipsum dolor.</p>
-                          </dd>
-                          <dt>Lorem Question ipsum dolor sit amet consectetur adipisicing elit.</dt>
-                          <dd>
-                              <p>Lorem ipsum dolor vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Lorem ipsum dolor.</p>
-                          </dd>
-                          <dt>Lorem Question ipsum dolor sit amet consectetur adipisicing elit.</dt>
-                          <dd>
-                              <p>Lorem ipsum dolor vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Lorem ipsum dolor.</p>
-                          </dd>
-                      </dl> -->
   </section>`
   }
 

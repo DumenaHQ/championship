@@ -33,6 +33,12 @@ let parameter2 = paramString[1].split("=")[1]
     ${name} </h2> </a>`
   }
 
+  function testSectionUI(quizName,link){
+    return `<dl>
+    <h2>Test your knowledge !</h2>
+    <b><a href="${link}">${quizName}</a></b>
+</dl> `;
+  }
 
 
 
@@ -52,6 +58,8 @@ let parameter2 = paramString[1].split("=")[1]
                 document.getElementById('lesson-body').insertAdjacentHTML('beforeend', lessonSectionUI(data.courses[i].modules[j].lessons[k].name,data.courses[i].modules[j].lessons[k].link)) //Course Name
 
               }
+              document.getElementById('module-title').insertAdjacentHTML('beforeend', testSectionUI(data.courses[i].modules[j].module_quiz.name,data.courses[i].modules[j].module_quiz.link)) //Course Name
+
               }
             
           }  
