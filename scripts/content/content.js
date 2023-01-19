@@ -42,7 +42,7 @@ export let data= {
                         }
                     ],
                     "description": "This first module discusses fundamentals of thinking about problems and talks about circuits in general.",
-                    "module_quiz":{"link":"","name":"Intro to Circuit Design Obj Quiz"}
+                    "module_quiz":{"link":"https://forms.gle/ociPw7GvdcY7bP1o8","name":"Intro to Circuit Design Obj Quiz"}
 
                 },
                 {
