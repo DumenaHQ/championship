@@ -42,7 +42,7 @@ export let data= {
                         }
                     ],
                     "description": "This first module discusses fundamentals of thinking about problems and talks about circuits in general.",
-                    "module_quiz":{"link":"https://forms.gle/ociPw7GvdcY7bP1o8","name":"Intro to Circuit Design Obj Quiz"}
+                    "module_quiz":{"link":"https://forms.gle/ociPw7GvdcY7bP1o8 ","name":"Intro to Circuit Design Obj Quiz"}
 
                 },
                 {
@@ -83,7 +83,7 @@ export let data= {
 
                     ],
                     "description": "Programming involves the use of a special language to communicate to computers exactly what they need to do. In this module we would get an early introduction into the C programming language that we can use to program on arduino",
-                    "module_quiz":{"link":"","name":""}
+                    "module_quiz":{"link":"https://forms.gle/ZL36bo6uKQUSkrLC6","name":"Intro to Programming With C Quiz"}
                 },
                 {
                     "name": "Basic Components & Circuit Notation",
@@ -114,7 +114,7 @@ export let data= {
                         }
                     ],
                     "description": "There are many basic components that you find in almost all electronic devices we take a look at some of them in this module",
-                    "module_quiz":{"link":"","name":""}
+                    "module_quiz":{"link":"https://forms.gle/BpM8DxPgaaKgtPYBA","name":"Basic Components and Circuit Notation Quiz"}
 
                 },
                 {
@@ -162,7 +162,7 @@ export let data= {
                         }
                     ],
                     "description": "This module takes a look at the online simulation software known as tinkercad.",
-                    "module_quiz":{"link":"","name":""}
+                    "module_quiz":{"link":"https://forms.gle/TxWMV7RXXG1VwvvA8","name":"Intro to Modeling and Design Quiz"}
 
                 },
                 {
@@ -178,7 +178,7 @@ export let data= {
                         }
                     ],
                     "description": "In this module we try to recreate some of the simple circuits we simulated on tinkercad.",
-                    "module_quiz":{"link":"","name":""}
+                    "module_quiz":{"link":"https://forms.gle/aPZvfMMbFupehP1b8","name":"Prototyping and Testing Quiz"}
 
                 }
             ],
