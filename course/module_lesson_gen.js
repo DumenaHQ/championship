@@ -19,9 +19,9 @@ let parameter2 = paramString[1].split("=")[1]
 
   function lessonSectionUI(name, url) {
     return `
-    <article>
+    <article style="">
     <b>${name}</b>
-    <video height="240" controls="">
+    <video height="250" width="100%" controls="">
     <source src="${url}" type="video/mp4">
     Your browser does not support the video tag.
   </video></article>
