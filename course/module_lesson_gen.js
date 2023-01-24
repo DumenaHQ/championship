@@ -21,8 +21,8 @@ let parameter2 = paramString[1].split("=")[1]
     return `
     <article style="">
     <b>${name}</b>
-    <video height="250" width="100%" controls="">
-    <source src="${url}" type="video/mp4">
+    <video height="250" width="100%" controls="controls" preload="metadata">
+    <source src="${url}#t=1" type="video/mp4">
     Your browser does not support the video tag.
   </video></article>
   `;
