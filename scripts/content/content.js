@@ -86,7 +86,7 @@ export let data= {
                     "module_quiz":{"link":"https://forms.gle/ZL36bo6uKQUSkrLC6","name":"Intro to Programming With C Quiz"}
                 },
                 {
-                    "name": "Basic Components & Circuit Notation",
+                    "name": "Basic Components and Circuit Notation",
                     "lessons": [
                         {
                             "link":"https://firebasestorage.googleapis.com/v0/b/dumena-18b4e.appspot.com/o/Introduction%20to%20Circuits%20%20(Robotics%20Competition)%2FBasic%20Components%20and%20Circuit%20Notations%2FIntroduction.mp4?alt=media&token=645c6a76-b17c-49e0-850f-8dcebc94005c",
