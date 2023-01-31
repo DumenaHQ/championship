@@ -19,9 +19,9 @@ let parameter2 = paramString[1].split("=")[1]
 
   function lessonSectionUI(name, url) {
     return `
-    <article style="">
-    <b>${name}</b>
-    <video height="250" width="100%" controls="controls" preload="metadata">
+    <article style="padding:5px">
+    <b style = "font-size:1.4em;display:block;">${name}</b>
+    <video height="100%" width="100%" controls="controls" preload="metadata">
     <source src="${url}#t=1" type="video/mp4">
     Your browser does not support the video tag.
   </video></article>
@@ -36,7 +36,7 @@ let parameter2 = paramString[1].split("=")[1]
   function testSectionUI(quizName,link){
     return `<dl>
     <h2>Test your knowledge !</h2>
-    <b><a href="${link}">${quizName}</a></b>
+    <b><a class="button" target="_blank" href="${link}">${quizName}</a></b>
 </dl> `;
   }
 
