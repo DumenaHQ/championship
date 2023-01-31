@@ -12,7 +12,6 @@
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<link rel="stylesheet" href="../../assets/css/main.css" />
-	<script type="module" src="module_lesson_gen.js"></script>
 
 </head>
 
@@ -29,40 +28,60 @@
 						<a href="../../index.html">
 							<h2 style="padding: 0%;"> <i class="fa fa-arrow-left" aria-hidden="true"></i>
 								Home </h2>
-								</a>							</header>
+						</a>
+					</header>
 				</header>
 
 				<!-- Content -->
 				<section>
 					<div id="course-title">
 
-							<div id="module-title" style="">
 
-									<div class="posts" id="lesson-body">
-
-							</div>
-						</div>
-
-							</div>
-
+					</div>
 				</section>
 
-			</div>
-		</div>
+				<!-- Scripts -->
+				<script>
 
+					var desktopLayout = `<div class="row gtr-200">
+							<div class="col-6 col-12-medium">
+								<div id="module-title" style="">
+									
+								</div>
+							</div>
 
+							<div class="col-6 col-12-medium">
+								<div style="margin:5px, 5px;
+            								padding:10px;
+                							width: 45em;
+                							height: 40em;
+                							overflow-x: hidden;
+                							overflow-y: auto;" id="lesson-body">
+								</div>
+							</div>
 
+	</div>`;
+					var mobileLayout = `<div id="module-title" style="">
+								<div class="posts" id="lesson-body">
+							</div>
+							</div>
+`;
 
+					console.log(screen.width)
+					if (screen.width > 1200) {
+						document.getElementById('course-title').insertAdjacentHTML('beforeend', desktopLayout)
 
+					} else {
+						document.getElementById('course-title').insertAdjacentHTML('beforeend', mobileLayout)
+					}
 
-	</div>
-
-	<!-- Scripts -->
-	<script src="../../assets/js/jquery.min.js"></script>
-	<script src="../../assets/js/browser.min.js"></script>
-	<script src="../../assets/js/breakpoints.min.js"></script>
-	<script src="../../assets/js/util.js"></script>
-	<script src="../../assets/js/main.js"></script>
+				</script>
+				<script type="module" src="module_lesson_gen.js"></script>
+				<script src="../../assets/js/jquery.min.js"></script>
+				<script src="../../assets/js/browser.min.js"></script>
+				<script src="../../assets/js/breakpoints.min.js"></script>
+				<script src="../../assets/js/util.js"></script>
+				<script src="../../assets/js/main.js"></script>
 
 </body>
 
