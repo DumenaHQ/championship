@@ -12,7 +12,9 @@
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<link rel="stylesheet" href="../../assets/css/main.css" />
-
+	<script type='text/javascript' > 
+			var maxScrollState = 0;
+	  </script>
 </head>
 
 <body class="is-preload">
@@ -43,6 +45,7 @@
 				<!-- Scripts -->
 				<script>
 
+
 					var desktopLayout = `<div class="row gtr-200">
 							<div class="col-6 col-12-medium">
 								<div id="module-title" style="">
@@ -54,11 +57,18 @@
 								<div style="margin:5px, 5px;
             								padding:10px;
                 							width: 45em;
-                							height: 40em;
+                							height: 28em;
                 							overflow-x: hidden;
                 							overflow-y: auto;" id="lesson-body">
 								</div>
+							
+							<div style = "padding:10px">
+							<button  onclick="scrollBack()">Prev</button>
+							<button  onclick="scrollNext()">Next</button>
 							</div>
+							</div>
+
+
 
 	</div>`;
 					var mobileLayout = `<div id="module-title" style="">
@@ -67,16 +77,36 @@
 							</div>
 `;
 
-					console.log(screen.width)
 					if (screen.width > 1200) {
 						document.getElementById('course-title').insertAdjacentHTML('beforeend', desktopLayout)
-
 					} else {
 						document.getElementById('course-title').insertAdjacentHTML('beforeend', mobileLayout)
 					}
 
+
+
 				</script>
 				<script type="module" src="module_lesson_gen.js"></script>
+				<script type="text/javascript">
+					var scrollstate = 0;
+
+					function scrollNext() {
+						if(scrollstate<maxScrollState-1){
+							scrollstate += 1;
+						}
+						document.getElementById(`lesson${scrollstate}`).scrollIntoView()
+
+					}
+					function scrollBack() { 	
+						if(scrollstate>0){
+							scrollstate -= 1;
+						}					
+						document.getElementById(`lesson${scrollstate}`).scrollIntoView()
+					}
+
+
+
+				</script>
 				<script src="../../assets/js/jquery.min.js"></script>
 				<script src="../../assets/js/browser.min.js"></script>
 				<script src="../../assets/js/breakpoints.min.js"></script>

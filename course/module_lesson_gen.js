@@ -17,9 +17,9 @@ let parameter2 = paramString[1].split("=")[1]
  `;
   }
 
-  function lessonSectionUI(name, url) {
+  function lessonSectionUI(name, url,id) {
     return `
-    <article style="padding:5px">
+    <article style="padding:5px" id='lesson${id}'>
     <b style = "font-size:1.4em;display:block;">${name}</b>
     <video height="100%" width="100%" controls="controls" preload="metadata">
     <source src="${url}#t=1" type="video/mp4">
@@ -44,7 +44,6 @@ let parameter2 = paramString[1].split("=")[1]
 
 
   //Gen Display
-
   //Set Courses
   for (let i = 0; i < data.courses.length; i++) {
     if(data.courses[i].name.replaceAll(/\s/g, '')==parameter1){
@@ -55,7 +54,8 @@ let parameter2 = paramString[1].split("=")[1]
               document.getElementById('module-title').insertAdjacentHTML('afterbegin', moduleSectionUI(data.courses[i].modules[j].name,data.courses[i].modules[j].description)) //Course Name
               //Lessons
               for (let k = 0; k < data.courses[i].modules[j].lessons.length; k++) {
-                document.getElementById('lesson-body').insertAdjacentHTML('beforeend', lessonSectionUI(data.courses[i].modules[j].lessons[k].name,data.courses[i].modules[j].lessons[k].link)) //Course Name
+                maxScrollState+=1;
+                document.getElementById('lesson-body').insertAdjacentHTML('beforeend', lessonSectionUI(data.courses[i].modules[j].lessons[k].name,data.courses[i].modules[j].lessons[k].link,k)) //Course Name
 
               }
               document.getElementById('module-title').insertAdjacentHTML('beforeend', testSectionUI(data.courses[i].modules[j].module_quiz.name,data.courses[i].modules[j].module_quiz.link)) //Course Name
@@ -67,5 +67,3 @@ let parameter2 = paramString[1].split("=")[1]
         }
  
   }
-
-
