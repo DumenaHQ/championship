@@ -62,9 +62,13 @@
                 							overflow-y: auto;" id="lesson-body">
 								</div>
 							
-							<div style = "padding:10px">
-							<button  onclick="scrollBack()">Prev</button>
-							<button  onclick="scrollNext()">Next</button>
+							<div style = "display: table;width: 100%;table-layout: fixed;">
+								<button style=" display: table-cell;text-align: center;" onclick="scrollBack()">Prev</button>
+
+								<span style=" display: table-cell;text-align: center;"> <b id="lessonPosition"></b>/<b id="lessonTotal"></b> </span>
+
+								<button style=" display: table-cell;text-align: center;" onclick="scrollNext()">Next</button>
+
 							</div>
 							</div>
 
@@ -89,12 +93,15 @@
 				<script type="module" src="module_lesson_gen.js"></script>
 				<script type="text/javascript">
 					var scrollstate = 0;
+					document.getElementById('lessonPosition').innerHTML=(scrollstate+1).toString();
 
 					function scrollNext() {
 						if(scrollstate<maxScrollState-1){
 							scrollstate += 1;
 						}
 						document.getElementById(`lesson${scrollstate}`).scrollIntoView()
+						document.getElementById('lessonPosition').innerHTML=(scrollstate+1).toString();
+
 
 					}
 					function scrollBack() { 	
@@ -102,6 +109,8 @@
 							scrollstate -= 1;
 						}					
 						document.getElementById(`lesson${scrollstate}`).scrollIntoView()
+						document.getElementById('lessonPosition').innerHTML=(scrollstate+1).toString();
+
 					}
 
 

@@ -67,3 +67,5 @@ let parameter2 = paramString[1].split("=")[1]
         }
  
   }
+  document.getElementById('lessonTotal').innerHTML=maxScrollState.toString();
+
