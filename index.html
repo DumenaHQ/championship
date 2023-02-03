@@ -45,22 +45,6 @@
 </head>
 
 <body class="is-preload">
-	<!-- Button trigger modal -->
-	<script>
-	$(document).ready(function(){
-		if(!localStorage.getItem('reg')){
-			$("#ModalLong").modal('show');
-		}
-		localStorage.setItem('reg',true) //Store in cache
-
-		$('#ModalLong').on('shown.bs.modal', function () {
-			$('#myInput').trigger('focus')
-		})
-    });
-		
-
-
-	</script>
 
 
 
@@ -72,15 +56,7 @@
 		<div id="main">
 			<div class="inner" id="page-main-body">
 
-				<!-- Header -->
-				<header id="header">
-					<span class="image object" style="width: 10%;">
-						<img src="images/dumena.png" alt="" />
-					</span>
-					<a href="index.html" class="logo">
-						<h1>Dumena Robotics Championship</h1>
-					</a>
-				</header>
+
 				<ul class="icons">
 					<li><a href="https://www.twitter.com/hi_dumena/" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
 					<li><a href="https://www.instagram.com/hi_dumena/" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
@@ -128,6 +104,37 @@
 
 	</div>
 	<!-- Scripts -->
+		<!-- Button trigger modal -->
+		<script>
+			if(screen.width<600){
+				document.getElementById('page-main-body').insertAdjacentHTML('afterbegin',`
+				<!-- Header -->
+				<header>
+							<img src="images/logo.svg" alt="" style="width:60%;height:60%; padding:30px 0px 10px 0px;" />
+						<a href="index.html" class="logo">
+							<h1>Dumena Robotics Championship</h1>
+						</a>
+				</header>
+						`)
+			}
+			else{
+				document.getElementById('page-main-body').insertAdjacentHTML('afterbegin',`
+				
+				<!-- Header -->
+				<header id="header">
+				<span class="image object" style="width: 10%;">
+							<img src="images/dumena.png" alt="" />
+						</span>
+						<a href="index.html" class="logo">
+							<h1>Dumena Robotics Championship</h1>
+						</a>
+				</header>
+						`)
+			}
+	
+	
+		</script>
+	
 	<script src="assets/js/browser.min.js"></script>
 	<script src="assets/js/breakpoints.min.js"></script>
 	<script src="assets/js/util.js"></script>
